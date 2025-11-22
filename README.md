@@ -33,13 +33,6 @@ curl -L https://raw.githubusercontent.com/sdmoralesma/sdkman-for-nushell/main/do
     -o ($nu.default-config-dir + "/overlays/sdkman.nu")
 ```
 
-## 🔭 Development
-Then clone this repository:
-```sh
-git clone https://github.com/sdmoralesma/sdkman-for-nushell.git \
-    ~/.config/nushell/sdkman-for-nushell
-```
-
 ## 🧩 Enabling the overlay
 
 It's recommended to add to your nushshell `config.nu` file:
@@ -71,4 +64,11 @@ If you used overlay use, you can cleanly remove it:
 
 ```
 overlay hide sdkman
+```
+
+## 🔭 Development
+Clone this repository:
+```sh
+git clone https://github.com/sdmoralesma/sdkman-for-nushell.git \
+    ~/.config/nushell/sdkman-for-nushell
 ```
