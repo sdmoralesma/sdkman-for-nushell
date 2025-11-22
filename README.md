@@ -38,12 +38,7 @@ curl -L https://raw.githubusercontent.com/sdmoralesma/sdkman-for-nushell/main/do
 It's recommended to add to your nushshell `config.nu` file:
 
 ```
-overlay use ~/.config/nushell/sdkman-for-nushell/sdkman.nu
-```
-
-Alternatively (simpler, but not unloadable)
-```
-use ~/.config/nushell/sdkman-for-nushell/sdkman.nu
+overlay use ($nu.default-config-dir + "/overlays/sdkman.nu")
 ```
 
 ## 🛠 Usage
